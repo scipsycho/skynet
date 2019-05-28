@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Skynet</title>
+    </head>
+    <body>
+        <h1>Enter Claim Data</h1>
+
+        <br><br><hr>
+
+        <form method="post" action="/claim/createClaim">
+
+            <label for="commonname">Common Name</label>
+            <input type="text" name="commonname">
+            <br>
+            <br>
+
+            <label for="username">Issuer Name</label>
+            <input type="text" name="issuername">
+            <br>
+            <br>
+
+            <label for="username">Username</label>
+            <input type="text" name="username">
+            <br>
+            <br>
+
+            <label for="endpoint">Endpoint</label>
+            <input type="text" name="endpoint">
+            <br>
+            <br>
+            {{ range $key, $value := . }}
+            <label for="{{ $key }}">{{ $key }} ({{ $value }})</label>
+            <input type="text" id="{{ $key }}" name="{{ $key }}">
+            <br>
+            <br>
+            {{ end }}
+           <button type="submit">Submit</button>
+        </form>
+
+    </body>
+</html>

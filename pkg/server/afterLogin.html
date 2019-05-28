@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Skynet</title>
+    </head>
+    <body>
+        <h1>Personal Page</h1>
+
+        <br><br><hr>
+
+        <h1>Create Claim Definitions</h1>
+        <form method="post" action="/claim/createClaimDefn">
+            <label for="username">User Name</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <br>
+
+            <label for="cname">Common Name</label>
+            <input type="text" id="cname" name="cname">
+            <br>
+            <br>
+
+            <label for="attr1">Attribute 1</label>
+            <input type="text" id="attr1" name="attr1">
+            <label for="type1">Type 1</label>
+            <input type="text" id="type1" name="type1">
+            <br>
+            <br>
+
+            <label for="attr1">Attribute 2</label>
+            <input type="text" id="attr2" name="attr2">
+            <label for="type1">Type 2</label>
+            <input type="text" id="type2" name="type2">
+            <br>
+            <br>
+
+            <label for="attr1">Attribute 3</label>
+            <input type="text" id="attr3" name="attr3">
+            <label for="type1">Type 3</label>
+            <input type="text" id="type3" name="type3">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <br><br><hr>
+
+        <h1>Display All Claims</h1>
+
+        <iframe method="get" src="/claim/displayAllClaims" width="100%" height = "300">
+        </iframe>
+
+        <br><br><hr>
+
+        <h1>Display All Claim Definitions</h1>
+
+        <iframe method="get" src="/claim/displayAllClaimDefns" width="100%" height = "300">
+        </iframe>
+
+        <br><br><hr><br><br>
+
+    </body>
+</html>
