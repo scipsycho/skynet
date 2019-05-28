@@ -1,0 +1,66 @@
+@font-face {
+	font-family:"heading_font";
+	src: url("../fonts/heading_font.otf");
+}
+
+@font-face {
+	font-family: "data_font";
+	src: url("../fonts/data_font.otf");
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: data_font, helvetica;
+}
+#container {
+
+    background-image: url('./skynet.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    background-position: center;
+    -webkit-background-position: cover;
+   -moz-background-position: cover;
+   -o-background-position: cover;
+
+background-repeat: no-repeat;
+
+    position: fixed;
+    text-align: center;
+
+}
+
+#heading {
+  color: red;
+  font-family: heading_font, helvetica;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+.center {
+  margin: auto;
+}
+#login, #signup {
+  width: 200px;
+  margin: auto;
+  /* margin-left: 40%; */
+  height: 200px;
+  background-color: white;
+  /* padding-left: 10%; */
+  border-radius: 20px;
+  border-color: black;
+  font-size: 10px;
+  align-items: center;
+}
+
+#displayall {
+  background-color: white;
+  border-radius: 20px;
+  border-color: black;
+  font-size: 10px;
+}
